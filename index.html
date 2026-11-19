@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky Boba Milk Tea | Share the Lucky Feeling</title>
+  <meta name="description" content="Lucky Boba Milk Tea – Taiwan boba milk tea, juice & coffee. 50+ branches across the Philippines. Order, visit, or own a franchise." />
+  <link rel="icon" href="images/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <img src="images/logo.jpg" alt="Lucky Boba logo" />
+        <span>Lucky <b>Boba</b></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#stores">Stores</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#franchise">Franchise</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#delivery" class="btn btn-orange nav-cta">Order Now</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="bubbles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="pill">🧋 Taiwan Boba • Milk Tea • Juice • Coffee</span>
+        <h1>Share the <span class="lucky-word">Lucky</span> feeling.</h1>
+        <p>Freshly shaken milk teas, chewy brown sugar pearls, fruity refreshers and cozy café bites — served with a smile at 50+ Lucky Boba branches.</p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn btn-orange">Explore Menu</a>
+          <a href="#franchise" class="btn btn-ghost">Own a Franchise →</a>
+        </div>
+        <div class="stats">
+          <div><strong class="count" data-target="50">0</strong><b>+</b><small>Branches</small></div>
+          <div><strong class="count" data-target="500">0</strong><b>+</b><small>Supply products</small></div>
+          <div><strong>100%</strong><small>Lucky vibes</small></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+<div class="hero-circle">
+  <video class="hero-logo" id="heroVideo"
+         src="images/lucky-hi.mp4" poster="images/logo.jpg"
+         autoplay muted loop playsinline></video>
+  <div class="hi-bubble">Hi! 👋</div>
+</div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Milk Tea ✦ Fruit Tea ✦ Cheesecake Foam ✦ Brown Sugar Pearls ✦ Coffee ✦ Juice ✦ Waffles ✦ Share the Lucky Feeling ✦ </span>
+      <span>Milk Tea ✦ Fruit Tea ✦ Cheesecake Foam ✦ Brown Sugar Pearls ✦ Coffee ✦ Juice ✦ Waffles ✦ Share the Lucky Feeling ✦ </span>
+    </div>
+  </div>
+
+  <!-- ===== MENU ===== -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our Menu</span>
+        <h2>Pick your <span class="hl">lucky</span> cup</h2>
+        <p>From classic milk teas to fruity refreshers, there's a cup for every mood.</p>
+      </div>
+
+      <div class="tabs reveal" id="menuTabs">
+        <button class="tab active" data-cat="milktea">Milk Tea</button>
+        <button class="tab" data-cat="fruit">Fruit Tea & Juice</button>
+        <button class="tab" data-cat="coffee">Coffee</button>
+        <button class="tab" data-cat="bites">Café Bites</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"><!-- filled by script.js --></div>
+
+      <!-- Feeling Lucky picker -->
+      <div class="lucky-picker reveal">
+        <div class="lp-text">
+          <h3>Can't decide? 🍀</h3>
+          <p>Let the Lucky husky pick your drink today.</p>
+          <button class="btn btn-orange" id="luckyBtn">I'm Feeling Lucky</button>
+        </div>
+        <div class="lp-result" id="luckyResult">
+          <div class="cup big" id="luckyCup" style="--drink:#c9a27e;--top:#f3e3cf"></div>
+          <p id="luckyName">Tap the button!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-img reveal">
+        <img src="images/castillo.jpg" alt="Lucky Boba Bubble Tea Café storefront" />
+        <div class="badge-float">🐺 Meet <b>Lucky</b>, our husky!</div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2>Little cups of <span class="hl">good luck</span></h2>
+        <p>Lucky Boba is a Taiwan-style boba milk tea, juice and coffee brand that believes every cup should feel like a small win. From food-truck carts to cozy bubble tea cafés, we bring the same quality everywhere.</p>
+        <ul class="checks">
+          <li><b>Consistent quality</b> — every branch is supplied by our own central warehouse.</li>
+          <li><b>Freshly made</b> — teas brewed and pearls cooked throughout the day.</li>
+          <li><b>Made for sharing</b> — kiosks, carts and cafés close to where you are.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORES ===== -->
+  <section class="section" id="stores">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Find Us</span>
+        <h2>There's a Lucky Boba <span class="hl">near you</span></h2>
+        <p>Over 50 branches and counting. Here are some of our newest stores.</p>
+      </div>
+      <div class="store-search reveal">
+        <input type="text" id="storeSearch" placeholder="🔍  Search by city or branch (e.g. Quezon City, Batangas)" />
+      </div>
+      <div class="store-grid" id="storeGrid"><!-- filled by script.js --></div>
+      <p class="no-store" id="noStore">No branch found yet — message us on Facebook, we might be opening near you soon!</p>
+    </div>
+  </section>
+
+  <!-- ===== DELIVERY ===== -->
+  <section class="section delivery" id="delivery">
+    <div class="container delivery-grid">
+      <div class="reveal">
+        <span class="eyebrow light">Delivery</span>
+        <h2>Relax.<br>We deliver.</h2>
+        <p>Craving boba but too comfy to move? Order Lucky Boba through your favorite delivery app and we'll bring the lucky feeling right to your couch.</p>
+        <ol class="steps">
+          <li><span>1</span> Open your delivery app</li>
+          <li><span>2</span> Search “Lucky Boba Milk Tea”</li>
+          <li><span>3</span> Pick your cup and relax 🛋️</li>
+        </ol>
+        <a href="https://www.facebook.com/luckybobamilkteaph/" target="_blank" rel="noopener" class="btn btn-orange">Message us to order</a>
+      </div>
+      <div class="delivery-img reveal">
+        <img src="images/delivery.jpg" alt="Ordering Lucky Boba from a delivery app" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FRANCHISE ===== -->
+  <section class="section franchise" id="franchise">
+    <div class="container franchise-grid">
+      <div class="franchise-img reveal">
+        <img src="images/franchise.jpg" alt="Start feeling lucky with a Lucky Boba franchise" />
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Franchise</span>
+        <h2>Start feeling lucky with your <span class="hl">own branch</span></h2>
+        <p>Join a growing family of 50+ branches. We handle the supply chain so you can focus on serving customers.</p>
+
+        <div class="formats">
+          <div class="format"><span>🛒</span><b>Kiosk</b><small>Compact & mall-ready</small></div>
+          <div class="format"><span>🚚</span><b>Food Truck</b><small>Eye-catching & mobile</small></div>
+          <div class="format"><span>🏠</span><b>Café</b><small>Full dine-in experience</small></div>
+        </div>
+
+        <ul class="checks">
+          <li><b>Central supply warehouse</b> — 500+ ingredients, packaging & equipment.</li>
+          <li><b>Scheduled deliveries</b> with auto-restock alerts.</li>
+          <li><b>Brand & marketing support</b> from opening day onward.</li>
+        </ul>
+        <a href="#franchiseForm" class="btn btn-purple">Inquire Now</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <form class="franchise-form reveal" id="franchiseForm">
+        <h3>Franchise Inquiry</h3>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Full name" required />
+          <input type="tel" name="phone" placeholder="Mobile number" required />
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email address" required />
+          <input type="text" name="location" placeholder="Proposed location" required />
+        </div>
+        <select name="format" required>
+          <option value="">Preferred format</option>
+          <option>Kiosk</option>
+          <option>Food Truck</option>
+          <option>Café</option>
+          <option>Not sure yet</option>
+        </select>
+        <textarea name="message" rows="4" placeholder="Tell us a bit about yourself (optional)"></textarea>
+        <button type="submit" class="btn btn-orange">Send Inquiry</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== SUPPLY PORTAL ===== -->
+  <section class="portal">
+    <div class="container portal-inner reveal">
+      <div>
+        <h3>Already a Lucky Boba branch? 📦</h3>
+        <p>Reorder ingredients, packaging and equipment from our Central Supply & Warehouse.</p>
+      </div>
+      <div class="portal-btns">
+        <a href="https://www.luckybobashop.com/login" target="_blank" rel="noopener" class="btn btn-orange">Branch Sign In</a>
+        <a href="https://www.luckybobashop.com/" target="_blank" rel="noopener" class="btn btn-ghost light">Visit Supply Site</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">#ShareTheLucky</span>
+        <h2>Lucky moments</h2>
+      </div>
+      <div class="gallery">
+        <img src="images/traffic.jpg" alt="Fruit teas in a traffic light" class="reveal" />
+        <img src="images/pamana.jpg" alt="Lucky Boba Pamana Medical Center" class="reveal" />
+        <img src="images/love.jpg" alt="Brown sugar milk tea" class="reveal" />
+        <img src="images/crossroad.jpg" alt="Lucky Boba Crossroad Park" class="reveal" />
+      </div>
+      <div class="center reveal">
+        <a href="https://www.facebook.com/luckybobamilkteaph/" target="_blank" rel="noopener" class="btn btn-purple">Follow us on Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq-sec">
+    <div class="container narrow">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions? We've got answers</h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item reveal">
+          <button class="faq-q">Do you offer delivery?<span>+</span></button>
+          <div class="faq-a"><p>Yes! Many of our branches are available on delivery apps. Search “Lucky Boba Milk Tea” in your app, or message our Facebook page.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">How do I find the nearest branch?<span>+</span></button>
+          <div class="faq-a"><p>Use the store search above, or search “Lucky Boba Milk Tea” on Google Maps.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">How can I own a Lucky Boba franchise?<span>+</span></button>
+          <div class="faq-a"><p>Fill out the franchise inquiry form above and our team will get in touch with the details and available formats.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q">I'm a branch owner. How do I reorder supplies?<span>+</span></button>
+          <div class="faq-a"><p>Sign in to the Central Supply portal at luckybobashop.com, or contact the supply team Monday–Saturday, 8 AM–5 PM.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-card reveal">
+        <span class="ic">✉️</span>
+        <h4>Email</h4>
+        <a href="mailto:luckybobapurchasing@gmail.com">luckybobapurchasing@gmail.com</a>
+      </div>
+      <div class="contact-card reveal">
+        <span class="ic">📞</span>
+        <h4>Call</h4>
+        <a href="tel:+639855482553">0985 548 2553</a>
+        <small>Mon–Sat, 8 AM–5 PM</small>
+      </div>
+      <div class="contact-card reveal">
+        <span class="ic">📍</span>
+        <h4>Warehouse</h4>
+        <a href="https://www.google.com/maps/place/LB+WH2/@14.709526,121.041976,20z" target="_blank" rel="noopener">LB WH2, Quezon City</a>
+        <small>Closed on regular holidays</small>
+      </div>
+      <div class="contact-card reveal">
+        <span class="ic">💬</span>
+        <h4>Facebook</h4>
+        <a href="https://www.facebook.com/luckybobamilkteaph/" target="_blank" rel="noopener">@luckybobamilkteaph</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand">
+        <img src="images/logo.jpg" alt="Lucky Boba logo" />
+        <span>Lucky <b>Boba</b></span>
+      </a>
+      <nav>
+        <a href="#menu">Menu</a><a href="#stores">Stores</a><a href="#franchise">Franchise</a><a href="#contact">Contact</a>
+      </nav>
+      <p>© <span id="year"></span> Lucky Boba Milk Tea. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
